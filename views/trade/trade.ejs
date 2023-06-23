@@ -1,0 +1,87 @@
+<%- include('../partials/header.ejs')%>
+
+    <div class="main-block">
+        <a title="image">
+            <img class="pull-left picture" src="<%=trade.image%>" alt="outfit" width="200" height="350" /><br />
+            <h2>
+                <%=trade.title%>
+            </h2>
+        </a>
+        <div class="item">
+            <p>
+                <strong>Description :</strong>
+                <%=trade.details%>
+                    <% if(trade.contents){%>
+                        <br /><br />
+                        It has: <%=trade.contents%>
+                            <%}%>
+            </p>
+            <%if(trade.size){%> Size: <%=trade.size%>
+                    <%}%>
+                        <br />
+                        <%if(trade.gender){%> Gender: <%=trade.gender%>
+                                <%}%>
+                                    <br />
+        </div>
+        <div>
+            <%if(user==trade.owner._id){ %>
+                <form>
+                    <button type="submit" class="button edit-operation" formmethod="GET"
+                        formaction="/trades/<%=trade.id%>/edit">
+                        <span>Edit</span>
+                    </button>
+                    <button type="submit" class="button delete-operation" formmethod="POST"
+                        formaction="/trades/<%=trade.id%>?_method=DELETE">
+                        <span>Delete</span>
+                    </button>
+                </form>
+                <%}else{%>
+                    <form>
+                        <p>Are you interested in this Outfit?</p>
+                        <% if(trade.status==='Available' ){%>
+                            <button class="button trade-operation" formmethod="GET"
+                                formaction="/trades/offer/<%=trade.id%>">
+                                <span>Trade</span>
+                            </button>
+                            <%} if(isWatchable){%>
+                                <button class="button watch-operation" formmethod="POST"
+                                    formaction="/trades/watch/<%=trade.id%>?_method=PUT">
+                                    <span>Add to WishlistWatch</span>
+                                </button>
+                                <%}else{%>
+                                    <button class="button unwatch-operation" formmethod="POST"
+                                        formaction="/trades/unwatch/<%=trade.id%>?_method=PUT">
+                                        <span>Remove from wishlist</span>
+                                    </button>
+                                    <%}%>
+                    </form>
+                    <%}%>
+        </div>
+    </div>
+    <% if (reviews.length) { %>
+        <section class="testimonials">
+            <h2>Reviews</h2>
+            <div class="testimonial-slider">
+                <% reviews.forEach(function(review) { %>
+                    <div class="testimonial">
+                        <div class="testimonial-content">
+                            <p><%= review.review %></p>
+                            <p class="testimonial-author">- <%= review.name %></p>
+                        </div>
+                    </div>
+                <% }); %>
+            </div>
+        </section>
+    <% } %>
+    
+            <div class="review-details">
+                <form action="/trades/<%=trade.id%>/reviews" method="POST">
+                    <div>
+                        <div class="form_details">
+                            <textarea class="user-review" name="review" placeholder="Give your review here" required></textarea>
+                        </div>
+                        <button type="submit" class="button unwatch-operation">Submit Review</button>
+                    </div>
+                </form>
+            </div>
+            <%- include('../partials/footer.ejs')%>

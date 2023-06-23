@@ -1,0 +1,52 @@
+<%- include('../partials/header.ejs')%>
+    <div class="main-block">
+        <% if(tradeList.length){%>
+            <h2>Your outfits available for Exchange</h2>
+            <form action="/trades/offer/<%=id%>" method="POST">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>&emsp;</th>
+                            <th>Title</th>
+                            <th>Category</th>
+                            <th>Status</th>
+
+                        </tr>
+                    </thead>
+                    <tr>
+                        <%tradeList.forEach(trade=>{%>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <input type="radio" name="tradeItem" value="<%=trade.id%>">
+                        </td>
+                        <td>
+                            <a href="/trades/<%=trade.id%>">
+                                <p>
+                                    <%=trade.title%>
+                                </p>
+                            </a>
+                        </td>
+                        <td>
+                            <p>
+                                <%=trade.category%>
+                            </p>
+                        </td>
+                        <td>
+                            <p>
+                                <%=trade.status%>
+                            </p>
+                        </td>
+                    </tr>
+
+                    <%})%>
+                </table>
+                <br>
+                <button type="submit" class="button trade-operation"><span>Request Exchange</span></button>
+            </form>
+            <% }else{%>
+                <p>You have no Outfits to complete this Exchange</p>
+                <% }%>
+    </div>
+    <%- include('../partials/footer.ejs')%>

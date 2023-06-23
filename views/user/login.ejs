@@ -1,0 +1,21 @@
+<%- include('../partials/header.ejs')%>
+    <div class="main-block">
+        <form action='/users/login' method='POST'>
+
+
+            <div class="form_details">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" class="fixed-width" required>
+            </div>
+
+            <div class="form_details">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password"  minlength="8" maxlength="64" class="fixed-width" required>
+            </div>
+            <div class="form_details">
+                <button type="submit" class="button edit-operation"><span>Login</span></button>
+            </div>
+        </form>
+
+    </div>
+    <%- include('../partials/footer.ejs')%>

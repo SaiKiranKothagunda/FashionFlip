@@ -1,0 +1,48 @@
+<%- include('../partials/header.ejs')%>
+    <div class="main-block">
+        <%if(trade){%>
+            <h2>Do you wish to Exchange?</h2>
+            <table class="trade-table" style="border: 0;">
+                <tr>
+                    <td>
+                        <a href="/trades/<%=trade.offerItem._id%>">
+                            <p>
+                                <%=trade.offerItem.title%>
+                            </p>
+
+                            <img src="<%=trade.offerItem.image%>" alt="outfit" width="200" height="250">
+                        </a>
+                    </td>
+                    <td>
+                        <img src="/imgs/exchange.png"
+                            alt="exchange" width="100" height="100">
+                        <br><br><br>
+                    </td>
+                    <td>
+                        <a href="/trades/<%=trade.id%>">
+                            <p>
+                                <%=trade.title%>
+                            </p>
+                            <img src="<%=trade.image%>" alt="outfit" width="200" height="250">
+                        </a>
+                    </td>
+                </tr>
+            </table>
+            <form class="action">
+                <button type="submit" class="button trade-operation" formmethod="POST"
+                    formaction="/trades/offer/<%=trade.offerItem.id%>/<%=trade.id%>/accept"><span>Accept</span></button>
+                <button type="submit" class="button delete-operation" formmethod="POST"
+                    formaction="/trades/offer/cancel/<%=trade.id%>/<%=trade.offerItem.id%>?_method=PUT"><span>Reject</span></button>
+            </form>
+            <!-- <div class="action">
+                <button type="submit" class="button cancel-operation" formmethod="POST"
+                    formaction="/trades/offer/cancel/<%=trade.id%>/<%=trade.offerItem._id%>?_method=PUT">
+                    <span>
+                        Cancel Offer</span>
+                </button>
+            </div> -->
+            <% }else{%>
+                <p>You have no Outfits to complete this trade</p>
+                <% }%>
+    </div>
+    <%- include('../partials/footer.ejs')%>

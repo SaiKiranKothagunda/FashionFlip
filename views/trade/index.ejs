@@ -1,0 +1,41 @@
+<%- include('../partials/header.ejs')%>
+    <form action="/trades/search" method="GET">
+        <div class="search-bar">
+            <img src="/imgs/search-icon.svg" alt="Search Icon" width="20" height="20">
+            <input type="text" name="query" placeholder="Search...">
+            <button type="submit" class="button edit-operation">Search</button>
+        </div>
+    </form>
+    <div class="index-page">
+        <ul class="navbar-nav">
+            <% if (trades.length) { %>
+                <div class="categories-container">
+                    <% categories.forEach(category=> { %>
+                        <div class="category">
+                            <h4>
+                                <%= category %>
+                            </h4>
+                            <ul class="item-category">
+                                <% trades.forEach(item=> { if (item.category === category) { %>
+                                    <li class="trade-image">
+                                        <a href="/trades/<%= item.id %>">
+                                        <img src="<%= item.image %>" alt="image">
+                                            <div class="trade-details">
+                                                <h4 class="trade-title">
+                                                    <%= item.title %>
+                                                </h4>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <% } }); %>
+                            </ul>
+                        </div>
+                        <% }); %>
+                </div>
+                <% } else { %>
+                    <p>Outfit Unavailable for trade</p>
+                    <% } %>
+        </ul>
+    </div>
+
+    <%- include('../partials/footer.ejs')%>

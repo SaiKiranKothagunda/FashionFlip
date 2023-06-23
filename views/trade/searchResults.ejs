@@ -1,0 +1,30 @@
+<%- include('../partials/header.ejs')%>
+    <form action="/trades/search" method="GET">
+        <div class="search-bar">
+            <img src="/imgs/search-icon.svg" alt="Search Icon" width="20" height="20">
+            <input type="text" name="query" placeholder="Search...">
+            <button type="submit" class="button edit-operation">Search</button>
+        </div>
+    </form>
+        <div class="trade-list">
+            <% if (trades.length) { %>
+              <div class="trade-category">
+                <% trades.forEach((item) => { %>
+                  <div class="trade-item">
+                    <a href="/trades/<%= item.id %>">
+                      <div class="trade-image">
+                        <img src="<%= item.image %>" alt="Trade Image">
+                      </div>
+                      <div class="trade-details">
+                        <h4 class="trade-title"><%= item.title %></h4>
+                      </div>
+                    </a>
+                  </div>
+                <% }); %>
+              </div>
+            <% } else { %>
+              <p>No trades available</p>
+            <% } %>
+          </div>
+          
+        <%- include('../partials/footer.ejs')%>

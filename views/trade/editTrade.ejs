@@ -1,0 +1,50 @@
+<%- include('../partials/header.ejs')%>
+    <div class="main-block">
+        <form method="POST" class="trade_form" action="/trades/<%=trade.id%>?_method=PUT">
+            <div id="details">
+                <div class="form_details">
+                    <label>Outfit Category </label>
+                    <input name="category" type="text" value="<%=trade.category%>" required>
+                </div>
+                <div class="form_details">
+                    <label>Outfit Title </label>
+                    <input name="title" type="text" value="<%=trade.title%>" required>
+                </div>
+                <div class="form_details">
+                    <label>Details </label>
+                    <textarea name="details" rows="6"
+                        cols="50"required minlength="1"><%=trade.details%></textarea>
+                </div>
+                <div class="form_details">
+                    <label>Outfit Contains </label>
+                    <input name="contents" type="text" value="<%=trade.contents%>">
+                </div>
+                <div class="form_details">
+                    <label>Gender </label>
+                    <select name="gender" required>
+                        <option value="Men" <%if(trade.gender==='Men'){%>selected<%}%>>Men</option>
+                        <option value="Women" <%if(trade.gender==='Women'){%>selected<%}%>>Women</option>
+                    </select>
+                </div>
+                <div class="form_details">
+                    <label>Size </label>
+                    <select name="size" required>
+                        <option value="XS" <%if(trade.size==='XS'){%>selected<%}%>>XS</option>
+                        <option value="S"  <%if(trade.size==='S'){%>selected<%}%>>S</option>
+                        <option value="M" <%if(trade.size==='M'){%>selected<%}%>>M</option>
+                        <option value="L" <%if(trade.size==='L'){%>selected<%}%>>L</option>
+                        <option value="XL" <%if(trade.size==='XL'){%>selected<%}%>>XL</option>
+                    </select>
+                </div>
+                <div class="form_details">
+                    <label>Outfit Picture URL</label>
+                    <input type="text" id="outfit_picture" name="image" value="<%=trade.image%>">
+                </div>
+                <div class="form_details">
+                    <button type="submit" class="button edit-operation"><span>Update Trade</span></button>
+
+                </div>
+            </div>
+        </form>
+    </div>
+    <%- include('../partials/footer.ejs')%>

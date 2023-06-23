@@ -1,0 +1,50 @@
+<%- include('../partials/header.ejs')%>
+<div class="main-block">
+    <form class="trade_form" action="/trades" method="POST">
+      <div id="details">
+        <div class="form_details">
+          <label for="title">Outfit Title</label>
+          <input id="title" name="title" type="text" required>
+        </div>
+        <div class="form_details">
+          <label for="category">Outfit Category</label>
+          <input id="category" name="category" type="text" required>
+        </div>
+        <div class="form_details">
+          <label for="details">Details</label>
+          <textarea id="details" name="details" placeholder="Describe Garment" rows="6" cols="50" required minlength="10"></textarea>
+        </div>
+        <div class="form_details">
+          <label for="contents">Outfit Contains</label>
+          <input id="contents" name="contents" type="text">
+        </div>
+        <div class="form_details">
+          <label for="gender">Gender</label>
+          <select id="gender" name="gender" required>
+            <option value="Men">Men</option>
+            <option value="Women">Women</option>
+          </select>
+        </div>
+        <div class="form_details">
+          <label for="size">Size</label>
+          <select id="size" name="size" required>
+            <option value="XS">XS</option>
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+            <option value="XL">XL</option>
+          </select>
+        </div>
+        <div class="form_details">
+          <label for="outfit_picture">Outfit Picture URL</label>
+          <input id="outfit_picture" type="text" name="image">
+        </div>
+        <div class="form_details">
+          <button type="submit" class="button edit-operation"><span>Create Trade</span></button>
+        </div>
+      </div>
+    </form>
+  </div>
+  
+
+    <%- include('../partials/footer.ejs')%>

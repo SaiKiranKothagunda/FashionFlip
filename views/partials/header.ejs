@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title> Fashion Flip</title>
+</head>
+<body>
+    <header id="navbar" role="banner">
+        <link href="/css/website.css" rel="stylesheet" type="text/css">
+        <script src="/js/main.js"></script>
+        <div class="navbar-header">
+            <div class="logo pull-left">
+                <a title="Trade homepage">
+                    <a href='/'><img class="logo-img" src="/imgs/logo_new.jpg" alt="Fashion Flip"></a>
+                </a>
+            </div>
+            <div id="top-navigation">
+                <nav role="navigation">
+                </ul>
+                    <ul class="navbar-nav">
+                        <li><a href="/trades/new" title="New Trade">Start Exchange!</a></li>
+                        >>
+                        <%if(!user){%>
+                        <li><a href="/users/new" title="Sign up">Sign up</a></li>
+                        |
+                        <li><a href="/users/login">Login</a></li>
+                        <% }else{%>
+                        <a href='/users/cart'>Cart</a>
+                        |
+                        <a href='/users/logout'>Logout</a>
+                        <%}%>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="bottom-navigation">
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/trades" title="Trades">Outfits</a></li>
+            </ul>
+        </div>
+    </header>
+    <div class="focused-body">
+    
+    <%- include('./flash.ejs')%>

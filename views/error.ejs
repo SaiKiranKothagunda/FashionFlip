@@ -1,0 +1,11 @@
+<%- include('./partials/header.ejs')%>
+    <div class="error_class">
+        <h3>
+           Unable to process the request due to Error Status <%=error.status%>
+        </h3>
+        
+        <p>
+          Message:  <%=error.message%>
+        </p>
+    </div>
+    <%- include('./partials/footer.ejs')%>
