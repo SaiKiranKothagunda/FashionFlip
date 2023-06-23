@@ -21,7 +21,7 @@ app.set("view engine", "ejs");
 //mount middleware
 app.use(
   session({
-      secret: "ITIS5166NBAD",
+      secret: "Secret password",
       resave: false,
       saveUninitialized: false,
       store: new MongoStore({mongoUrl: 'mongodb://localhost:27017/NinerOutfitTrade'}),
