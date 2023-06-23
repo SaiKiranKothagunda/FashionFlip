@@ -11,4 +11,4 @@ Steps to run on the local environment:
 1. Clone the GitHub repository
 2. Open a command prompt and navigate to the cloned repository
 3. Run command npm install - This will automatically install all dependencies for this UI application.
-4. Run “node app” command and listen to http://localhost:4200 on your browser 
+4. Run “node app” command and listen to http://localhost:3003 on your browser 
