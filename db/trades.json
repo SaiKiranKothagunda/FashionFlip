@@ -1,0 +1,323 @@
+[{
+  "_id": {
+    "$oid": "63851f10827ffe36b83894bf"
+  },
+  "category": "Office Wear",
+  "title": "3 Piece Suit",
+  "details": "A 3 piece suit for men should be attractive and match the dress of your beloved. 3 Piece Suits are perfect for formal attire or a wedding, but you can wear them for many occasions.",
+  "contents": "Jacket, Trousers and a Waistcoat.",
+  "gender": "Men",
+  "size": "XL",
+  "image": "https://iili.io/paXbGs.jpg",
+  "owner": {
+    "$oid": "63845450e8b7b64808d11df2"
+  },
+  "createdAt": {
+    "$date": "2022-11-28T20:50:24.594Z"
+  },
+  "updatedAt": {
+    "$date": "2023-06-21T18:17:17.764Z"
+  },
+  "__v": 0,
+  "status": "Available",
+  "watchHistory": [
+    ""
+  ],
+  "offerItem": null,
+  "offerItemOwner": null
+},
+{
+  "_id": {
+    "$oid": "63851f54827ffe36b83894c2"
+  },
+  "category": "Casual Wear",
+  "title": "Hoodie",
+  "details": "Relaxed-fit sweatshirt hoodie in cotton-blend fabric with soft, brushed inside. Jersey-lined drawstring hood, kangaroo pocket, and long sleeves.",
+  "contents": "",
+  "gender": "Men",
+  "size": "XL",
+  "image": "https://iili.io/pawCkQ.webp",
+  "owner": {
+    "$oid": "63845450e8b7b64808d11df2"
+  },
+  "createdAt": {
+    "$date": "2022-11-28T20:51:32.187Z"
+  },
+  "updatedAt": {
+    "$date": "2023-06-07T17:53:42.738Z"
+  },
+  "__v": 0,
+  "status": "Available",
+  "offerItem": null,
+  "offerItemOwner": null,
+  "watchHistory": []
+},
+{
+  "_id": {
+    "$oid": "63851f8b827ffe36b83894c5"
+  },
+  "category": "Office Wear",
+  "title": "Suit Jacket",
+  "details": "On your every-day business meetings, it will be worn with tone on tone trousers; according to the recent tendencies, in less formal contexts it can be worn with trousers in a contrasting colour.",
+  "contents": "",
+  "gender": "Men",
+  "size": "L",
+  "image": "https://iili.io/pawnpV.jpg",
+  "owner": {
+    "$oid": "63845450e8b7b64808d11df2"
+  },
+  "createdAt": {
+    "$date": "2022-11-28T20:52:27.365Z"
+  },
+  "updatedAt": {
+    "$date": "2022-12-12T18:06:39.582Z"
+  },
+  "__v": 0,
+  "status": "Available",
+  "offerItem": null,
+  "offerItemOwner": null
+},
+{
+  "_id": {
+    "$oid": "6385260803dfd855543aaff0"
+  },
+  "category": "Casual Wear",
+  "title": "Jump Suit",
+  "details": "Jumpsuits are, without a doubt, a statement style. The head-to-toe, all-in-one garment creates a striking look that moves beyond a simple dress",
+  "contents": "",
+  "gender": "Women",
+  "size": "S",
+  "image": "https://iili.io/pae1jV.webp",
+  "owner": {
+    "$oid": "63851fc3827ffe36b83894d0"
+  },
+  "status": "Traded",
+  "createdAt": {
+    "$date": "2022-11-28T21:20:08.950Z"
+  },
+  "updatedAt": {
+    "$date": "2023-06-23T16:52:05.169Z"
+  },
+  "__v": 0,
+  "watchHistory": [
+    {
+      "$oid": "63845450e8b7b64808d11df2"
+    }
+  ],
+  "offerItem": {
+    "$oid": "6491bf01b869396b7cbb5633"
+  },
+  "offerItemOwner": {
+    "$oid": "63845450e8b7b64808d11df2"
+  }
+},
+{
+  "_id": {
+    "$oid": "6385264803dfd855543aaff3"
+  },
+  "category": "Casual Wear",
+  "title": "Sundress",
+  "details": "Planning a weekend vacay? Don't forget to pack this adorable satin dress! , brand logo, solid color, deep neckline, zipper closure, no pockets",
+  "contents": "Denim Jacket, Sundress",
+  "gender": "Women",
+  "size": "M",
+  "image": "https://iili.io/pawBYx.jpg",
+  "owner": {
+    "$oid": "63851fc3827ffe36b83894d0"
+  },
+  "status": "Available",
+  "createdAt": {
+    "$date": "2022-11-28T21:21:12.585Z"
+  },
+  "updatedAt": {
+    "$date": "2023-06-20T20:09:02.392Z"
+  },
+  "__v": 0,
+  "watchHistory": [
+    {
+      "$oid": "63845450e8b7b64808d11df2"
+    }
+  ],
+  "offerItem": null,
+  "offerItemOwner": null
+},
+{
+  "_id": {
+    "$oid": "6385267f03dfd855543aaff6"
+  },
+  "category": "Office Wear",
+  "title": "Red Tuxedo",
+  "details": "The look and fit of a suit, the high quality of a structured blazer, the feel and comfort of leggings.This bold red pantsuit-set is the perfect look for the boss lady that wants to make a statement!",
+  "contents": "Jacket, Trouser",
+  "gender": "Women",
+  "size": "XS",
+  "image": "https://iili.io/pawq2j.jpg",
+  "owner": {
+    "$oid": "63851fc3827ffe36b83894d0"
+  },
+  "status": "Offer Pending",
+  "createdAt": {
+    "$date": "2022-11-28T21:22:07.813Z"
+  },
+  "updatedAt": {
+    "$date": "2023-06-23T20:14:10.687Z"
+  },
+  "__v": 0,
+  "watchHistory": [],
+  "offerItem": {
+    "$oid": "6491bf78b869396b7cbb5636"
+  },
+  "offerItemOwner": {
+    "$oid": "63845450e8b7b64808d11df2"
+  },
+  "reviews": [
+    {
+      "_id": {
+        "$oid": "6495fc873f54a86ca8255bbe"
+      },
+      "user": {
+        "$oid": "63845450e8b7b64808d11df2"
+      },
+      "name": "Sai",
+      "review": "Outfit is true to its size and like new ",
+      "updatedAt": {
+        "$date": "2023-06-23T20:11:51.493Z"
+      },
+      "createdAt": {
+        "$date": "2023-06-23T20:11:51.493Z"
+      }
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "638526b603dfd855543aaff9"
+  },
+  "category": "Party Wear",
+  "title": "Skirt",
+  "details": "Pink Skirt, a perfect choice for a party",
+  "contents": "Single Skirt",
+  "gender": "Women",
+  "size": "L",
+  "image": "https://iili.io/p1GKxt.jpg",
+  "owner": {
+    "$oid": "63851fc3827ffe36b83894d0"
+  },
+  "status": "Available",
+  "createdAt": {
+    "$date": "2022-11-28T21:23:02.691Z"
+  },
+  "updatedAt": {
+    "$date": "2022-12-13T04:27:02.874Z"
+  },
+  "__v": 0,
+  "watchHistory": [],
+  "offerItem": null,
+  "offerItemOwner": null
+},
+{
+  "_id": {
+    "$oid": "639446cdfe961b21e0150308"
+  },
+  "title": "Maxi Dress",
+  "category": "Party Wear",
+  "details": "Just slim fit Floral-Print Maxi Dress with V Neck and \r\nWrap front",
+  "contents": "Single item",
+  "gender": "Women",
+  "size": "M",
+  "image": "https://cdn-images.farfetch-contents.com/16/97/08/38/16970838_34029074_1320.jpg",
+  "owner": {
+    "$oid": "63845450e8b7b64808d11df2"
+  },
+  "status": "Available",
+  "createdAt": {
+    "$date": "2022-12-10T08:43:57.834Z"
+  },
+  "updatedAt": {
+    "$date": "2023-06-19T18:00:45.041Z"
+  },
+  "__v": 0,
+  "offerItem": null,
+  "offerItemOwner": null,
+  "watchHistory": []
+},
+{
+  "_id": {
+    "$oid": "6491be68b869396b7cbb562d"
+  },
+  "image": "https://cdn.cliqueinc.com/posts/293912/summer-outfits-for-women-293912-1624554142063-promo.700x0c.jpg",
+  "watchHistory": [],
+  "title": "Basic tank and Jeans",
+  "category": "Summer Wear",
+  "details": "Summer outfit for women who feel fresh",
+  "contents": "Button-Down, Tank, Jeans",
+  "gender": "Women",
+  "size": "S",
+  "owner": {
+    "$oid": "63845450e8b7b64808d11df2"
+  },
+  "status": "Available",
+  "createdAt": {
+    "$date": "2023-06-20T14:57:44.676Z"
+  },
+  "updatedAt": {
+    "$date": "2023-06-20T20:09:02.393Z"
+  },
+  "__v": 0,
+  "offerItem": null,
+  "offerItemOwner": null
+},
+{
+  "_id": {
+    "$oid": "6491bf01b869396b7cbb5633"
+  },
+  "image": "https://cdn.cliqueinc.com/posts/293912/summer-outfits-for-women-293912-1658764903405-main.1200x0c.jpg",
+  "watchHistory": [],
+  "title": "Maxi Dress",
+  "category": "Party Wear",
+  "details": "Wisteria Floral Sleeveless Maxi Dress",
+  "contents": "",
+  "gender": "Women",
+  "size": "L",
+  "owner": {
+    "$oid": "63845450e8b7b64808d11df2"
+  },
+  "status": "Traded",
+  "createdAt": {
+    "$date": "2023-06-20T15:00:17.669Z"
+  },
+  "updatedAt": {
+    "$date": "2023-06-23T16:52:05.169Z"
+  },
+  "__v": 0,
+  "offerItem": {
+    "$oid": "6385260803dfd855543aaff0"
+  },
+  "offerItemOwner": {
+    "$oid": "63851fc3827ffe36b83894d0"
+  }
+},
+{
+  "_id": {
+    "$oid": "6491bf78b869396b7cbb5636"
+  },
+  "image": "https://cdn.cliqueinc.com/posts/293211/easy-summer-outfit-ideas-293211-1620927051851-product.1200x0c.png",
+  "watchHistory": [],
+  "title": "Tank",
+  "category": "Summer Wear",
+  "details": "Eva Cotton-Jersey Tank",
+  "contents": "",
+  "gender": "Women",
+  "size": "XS",
+  "owner": {
+    "$oid": "63845450e8b7b64808d11df2"
+  },
+  "status": "Offer Pending",
+  "createdAt": {
+    "$date": "2023-06-20T15:02:16.845Z"
+  },
+  "updatedAt": {
+    "$date": "2023-06-23T20:14:10.687Z"
+  },
+  "__v": 0
+}]

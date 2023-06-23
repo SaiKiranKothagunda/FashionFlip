@@ -24,7 +24,7 @@ app.use(
       secret: "Secret password",
       resave: false,
       saveUninitialized: false,
-      store: new MongoStore({mongoUrl: 'mongodb://localhost:27017/NinerOutfitTrade'}),
+      store: new MongoStore({mongoUrl: 'mongodb://localhost:27017/FashionFlip'}),
       cookie: {maxAge: 60*60*1000}
       })
 );
@@ -42,7 +42,7 @@ app.use(morgan("tiny"));
 app.use(methodOverride("_method"));
 
 mongoose
-  .connect('mongodb://localhost:27017/NinerOutfitTrade', {
+  .connect('mongodb://localhost:27017/FashionFlip', {
     useNewUrlParser: true,
     useUnifiedTopology: true, useCreateIndex: true
   })
